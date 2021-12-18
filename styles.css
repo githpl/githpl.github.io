@@ -1,0 +1,68 @@
+body {
+	background: lightblue url("wall2.gif") fixed center/25%;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffff00;
+	color: black;
+	text-align: center;
+	min-height: 30px;
+	max-height:30px;
+}
+
+
+
+
+.skills, .langs {
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+	font-size: 8pt;
+	display: inline-block;
+	white-space: nowrap;
+	animation: floatText 300s infinite linear;
+	padding-left: 5%; /*Initial offset*/
+	color:black;
+}
+
+
+
+.skills:hover, .langs:hover {
+	animation-play-state: paused;
+}
+
+
+@keyframes floatText {
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+#footer-text{
+	margin-bottom: 7px;
+}
+
+
+.main-box{
+}
+
+.frame {
+	display: flex;
+	justify-content: center;
+}
+
+.spin {
+	align-items: center;
+	max-height: 350px;
+}
+
+.hover-frame {
+	transition: transform .4s; /* Animation */
+}
+
+	.hover-frame:hover {
+		transform: scale(1.05);
+	}
