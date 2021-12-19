@@ -1,5 +1,8 @@
 body {
-	background: lightblue url("wall2.gif") fixed center/25%;
+	background: lightblue url("wall.jpg") fixed center/100%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .footer {
@@ -45,13 +48,24 @@ body {
 	margin-bottom: 7px;
 }
 
-
-.main-box{
+.social{
+	padding:0px;
 }
+
+.social > a > img {
+	
+	width: 85%;
+	max-width: 50px;
+	height: auto;
+
+}
+
+
 
 .frame {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 30px;
 }
 
 .spin {
@@ -60,9 +74,32 @@ body {
 }
 
 .hover-frame {
-	transition: transform .4s; /* Animation */
+	transition: transform .3s; /* Animation */
+	cursor: pointer;
 }
 
-	.hover-frame:hover {
-		transform: scale(1.05);
-	}
+.hover-frame:hover {
+	transform: scale(1.10);
+}
+
+
+.hover-icon {
+	transition: transform .25s; /* Animation */
+	cursor: pointer;
+
+	/* resonsive */
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+}
+
+
+.hover-icon:hover {
+	transform: scale(1.1);
+}
+
+#backdrop {
+	background: lightblue url("wall2.gif") fixed center/15%;
+
+
+}
